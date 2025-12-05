@@ -29,6 +29,18 @@ export default defineConfig({
           react: 'React',
           'react-dom': 'ReactDOM',
         },
+        // ----------------------------------------------------
+        // ✅ 关键修改点：使用 assetFileNames 确保 CSS 文件命名为 style.css
+        assetFileNames: (assetInfo) => {
+          // Rollup/Vite 会将提取的 CSS 文件命名为一个 asset
+          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+            // 确保所有 CSS 文件都被命名为 style.css，并放在 dist 根目录
+            return 'style.css'; 
+          }
+          // 对于其他静态资源 (如图片、字体等)，使用默认的哈希命名规则
+          return 'assets/[name]-[hash][extname]';
+        },
+        // ----------------------------------------------------
       },
     },
   },

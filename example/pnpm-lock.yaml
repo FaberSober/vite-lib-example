@@ -9,13 +9,13 @@ importers:
   .:
     dependencies:
       '@fabernpm/lib01':
-        specifier: ^1.0.0
-        version: 1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 1.0.1
+        version: 1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@vitejs/plugin-react':
@@ -251,8 +251,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fabernpm/lib01@1.0.0':
-    resolution: {integrity: sha512-CXJUC9eSbK2SLUr9kRSAp0u5vHFidJrhnozxk54hekeShkoy5o9/kij/9gVMGU/l/gpMbbAn+du9kujpZ809cw==}
+  '@fabernpm/lib01@1.0.1':
+    resolution: {integrity: sha512-CWNg/8adYoLeIZsKCDoOpxlI6C06h6+GsEAAh5oADTvoV8595VDDqKg41VFT4+FBEBAY5Moecrb/ivZIHjtnLw==}
     peerDependencies:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
@@ -747,7 +747,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@fabernpm/lib01@1.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@fabernpm/lib01@1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)

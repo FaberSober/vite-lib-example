@@ -16,7 +16,7 @@ export default defineConfig({
     // 库模式配置
     lib: {
       entry: resolve(__dirname, 'src/index.ts'), // 入口文件
-      name: 'FabernpmUi', // UMD 格式下的全局变量名
+      name: 'MyLib', // UMD 格式下的全局变量名
       fileName: (format) => `index.${format === 'es' ? 'mjs' : 'js'}`, // 输出文件名规则
       formats: ['es', 'umd'], // 输出 ES Module 和 UMD (CommonJS 兼容)
     },

@@ -1,6 +1,6 @@
 {
-  "name": "@fabernpm/lib01",
-  "version": "1.0.2",
+  "name": "@fabernpm/ui",
+  "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -16,12 +16,10 @@
     },
     "./style.css": "./dist/style.css"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
+    "build": "vite build",
     "dev": "vite build --watch",
-    "build": "vite build"
+    "lint": "eslint src --ext ts,tsx"
   },
   "peerDependencies": {
     "react": ">=18.0.0",

@@ -16,7 +16,9 @@
     },
     "./style.css": "./dist/style.css"
   },
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build"

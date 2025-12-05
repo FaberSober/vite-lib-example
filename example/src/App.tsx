@@ -1,3 +1,4 @@
+import { Button } from '@fabernpm/lib01'
 import React from 'react'
 
 export default function App() {
@@ -5,6 +6,8 @@ export default function App() {
     <div className="app">
       <h1>Vite + React Example</h1>
       <button onClick={() => alert('Hello from example!')}>Click me</button>
+
+      <Button label='hello' />
     </div>
   )
 }
